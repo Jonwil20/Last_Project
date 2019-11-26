@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">	<title>INSIGHTers Dashboard</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet"  href="05_style.css">
+	</head>
+
+	<body>
+		<!-------------------------------------------------------------------------------------------------------->
+		<!--  												NAV  												-->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+					<!--									... LANDING PAGE  									-->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+						<a class="navbar-brand" href="index.html"><span class="latitude"></span>INSIGHTers</a></div>
+					<!--									... VIZ & DATA PAGES 							-->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<!--<li><a href="index.html">ROADMAP</a></li>-->
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ANALYSIS<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="viz/index_amrita.html">Amrita</a></li>
+									<li><a href="viz/index_james.html">James</a></li>
+									<li><a href="viz/index_jonathan.html">Jonathan</a></li>									
+									<li><a href="viz/index_nobon.html">Nobon</a></li>
+									<li><a href="viz/index_patrick.html">Patrick</a></li>
+									<li><a href="viz/index_ray.html">Ray</a></li>
+									<li><a href="viz/index_sancta.html">Sancta</a></li>		
+								</ul></li>
+							<!--<li><a href="index.html">FINDINGS</a></li>-->
+							<!--<li><a href="https://data.amerigeoss.org/nl/dataset/usda-rural-development-section-502-guaranteed-loan-program-active-loans-by-congressional-d">DATA</a></li></ul></div></div>-->
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="https://data.amerigeoss.org/nl/dataset/usda-rural-development-section-502-guaranteed-loan-program-active-loans-by-congressional-d" target="_blank">Data</a></li>
+									<li><a href="https://www.usdaloans.com/articles/direct-vs-guaranteed/" target="_blank">USDA Loans</a></li>
+								</ul></li>		
+		</nav>
+		<!-------------------------------------------------------------------------------------------------------->	
+		<!--                                                CONTAINER											-->
+						<h1><strong><center><font color="blue"><u>INSIGHTers' Final Project</u></font></center></strong></h1>
+						<div class="content">	<img src="insighters.png" alt="Insighters" class="center" width=100 height=400> </div>
+  <style>                                          
+						.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;							
+  width: 50%;
+}
+	                                  
+	  
+						</style>
+						
+						<h3><strong><u>USDA Direct Loan vs USDA Guaranteed Loans</u></strong></h3>
+						<ul>
+							<li><font size="4"> Two types of Section 502 Single-Family Rural Housing Loans</font></li>
+							<li><font size="4"> USDA created both loan programs to boost homeownership in rural and suburban areas</font></li>
+							<li><font size="4"> The two programs have key differences and are meant for two very different situations:</font></li>
+							<ul>
+							<li><font size="3"> <u>Guaranteed Loan</u>: Meant for low- to moderate-income families</font></li>
+							<li><font size="3"> <u>Direct Loan</u>: Meant for very low-income families</font></li>
+							</ul>
+							<li><font size="4"> Primary difference between USDA Direct Loans and USDA Guaranteed Loans is who funds the actual loan:</font></li>
+							<ul>
+							<li><font size="3"> <u>Guaranteed Loan</u>: Private lenders fund the loan while the USDA backs each loan against default</font></li>
+							<li><font size="3"> <u>Direct Loan</u>: the USDA acts as the lender</font></li>
+							</ul>
+							
+						</ul>
+						
+						
+						
+						<h3 align="center"><strong><u>Basic Eligibility Requirements</u></strong></h3>
+
+			
+
+			 <figure class="table ">
+			<div class="container">
+    <table class="table table-bordered">
+  <caption class="hidden"></caption>
+    <thead>
+                        <tr class="header-row">
+                                          <th scope="col">Topic</th>
+                                                        <th scope="col">USDA Direct Loan</th>
+                                                        <th scope="col">USDA Guaranteed Loan</th>
+                                                                                                                                            </tr>
+        </thead>
+      <tbody>
+                    <tr>
+                              <td  scope="row" >Minimum Credit Score</td>
+                                        <td >640</td>
+                                        <td >640</td>
+                                                                                                </tr>
+                    <tr>
+                              <td  scope="row" >Base Income Limit</td>
+                                        <td >50-80% of Area&#039;s Median Income</td>
+                                        <td >115% of Area&#039;s Median Income</td>
+                                                                                                </tr>
+                    <tr>
+                              <td  scope="row" >Household Income Limit</td>
+                                        <td >1-4 Member Household = $50,100              5-8 Member Household = $66,150    </td>
+                                        <td >1-4 Member Household = $86,850            5-8 Member Household = $114,650</td>
+                                                                                                </tr>
+                    <tr>
+                              <td  scope="row" >Property Requirements </td>
+                                        <td >Home must be structurally sound, functionally adequate, in good repair and located in a &quot;rural&quot; area.</td>
+                                        <td >Home must be structurally sound, functionally adequate, in good repair and located in a &quot;rural&quot; area.</td>
+                                                                                                </tr>
+                    <tr>
+                              <td  scope="row" >Max Loan Amount</td>
+                                        <td >Property must be less than 2,000 square feet.</td>
+                                        <td >No limit.</td>
+                                                                                                </tr>
+                    <tr>
+                                                                                                                                            </tr>
+        </tbody>
+</table>      </figure>
+	
+				 <h3 align="center"><strong><u>Loan Program Process</u></strong></h3>				  
+
+  <figure class="table ">
+    <div class="container">
+    <table class="table table-bordered">
+  <caption class="hidden"></caption>
+    <thead>
+                        <tr class="header-row">
+                                          <th scope="col">Topic</th>
+                                                        <th scope="col">USDA Direct Loan</th>
+                                                        <th scope="col">USDA Guaranteed Loan</th>
+                                                                                                                                            </tr>
+        </thead>
+      <tbody>
+                    <tr>
+                              <td  scope="row" >Application</td>
+                                        <td >Submit application directly to your local Rural Development Office.</td>
+                                        <td >Apply directly with a lender who will submit underwritten file to GUS for approval.</td>
+                                                                                                </tr>
+                    <tr>
+                              <td  scope="row" >Interest Rates</td>
+                                        <td >Fixed rate based on current market rate at loan approval or loan closing, whichever is lower. Current rate is 3.25 percent.</td>
+                                        <td >Fixed rate determined by lender based on qualifying factors.</td>
+                                                                                                </tr>
+                    <tr>
+                              <td  scope="row" >Loan Terms</td>
+                                        <td >Loan term is 33 years and 38 years depending on income level.</td>
+                                        <td >Traditional 15-year and 30-year options are available.</td>
+                                                                                                </tr>
+                    <tr>
+                              <td  scope="row" >Fees</td>
+                                        <td >No mortgage insurance is required.</td>
+                                        <td >Two forms of mortgage insurance:an upfront guarantee fee, and annual mortgage insurance premium paid as part of your monthly mortgage payment.</td>
+                                                                                                </tr>
+        </tbody>
+</table>      </figure>
+			
+			<div class="col-sm-12 col-md-8">
+				<div class="box">
+					<div class="header"><h1 class="summary">Analysis and Visualizations</h1></div>
+
+					<div class="content">
+						<!--<div class="thumbnail col-md-9">-->
+
+							<a href="viz/index_amrita.html"><img src="viz/amrita.jpg" alt="Amrita" height="180" width="180"></a>
+								<!--<<div class="caption"><h3><b>Amrita</b></h3></div>--></a>							
+							<a href="viz/index_james.html"><img src="viz/Pic_James.jpeg" alt="James" height="180" width="180"></a>
+								<!--<div class="caption"><h3><b>James</b></h3></div>--></a>						
+							<a href="viz/index_jonathan.html"><img src="viz/Pic_Jonathan.jpeg" alt="Jonathan" height="180" width="180"></a>
+								<!--<<div class="caption"><h3><b>Jonathan</b></h3></div>--></a>
+							<a href="viz/index_nobon.html"><img src="viz/Pic_Nobon.jpeg" alt="Nobon" height="180" width="180"></a>
+								<!--<<div class="caption"><h3><b>Nobon</b></h3></div>--></a>
+							<a href="viz/index_patrick.html"><img src="viz/patrick2.jpg" alt="Patrick" height="180" width="180"></a>
+								<!--<<div class="caption"><h3><b>Patrick</b></h3></div>--></a>								
+							<a href="viz/index_ray.html"><img src="viz/Pic_Ray.jpeg" alt="Ray" height="180" width="180"></a>
+								<!--<<div class="caption"><h3><b>Ray</b></h3></div>--></a>
+							<a href="viz/index_sancta.html"><img src="viz/Sancta.jpg" alt="Sancta" height="180" width="180"></a>
+								<!--<<div class="caption"><h3><b>Sancta</b></h3></div>--></a>
+						<!--</div>-->
+					</div>
+
+					<div class="header"><h1 class="summary">INSIGHTers</h1></div>
+							<a href="" target="_blank" src="viz/LinkedInLogo.jpeg"><strong>Amrita</strong></a>	
+							<a href="" target="_blank" src="viz/LinkedInLogo.jpeg" ><strong>|  James</strong></a>							
+							<a href="https://www.linkedin.com/in/jonathan-r-66959a125/" target="_blank" src="viz/LinkedInLogo.jpeg" ><strong>|  Jonathan</strong></a>	
+							<a href="" target="_blank" src="viz/LinkedInLogo.jpeg" ><strong>|  Nobon</strong></a>
+							<a href="https://www.linkedin.com/in/patrick-glover-0398302a/" target="_blank" src="viz/LinkedInLogo.jpeg" ><strong>|  Patrick</strong></a>	
+							<a href="https://www.linkedin.com/in/raymarquezpmp/" target="_blank" src="viz/LinkedInLogo.jpeg" img="viz/LinkedInLogo.jpeg"><strong>|  Ray</strong></a>
+							<a href="https://www.linkedin.com/in/isimbi-sancta-281288127/" target="_blank" src="viz/LinkedInLogo.jpeg" ><strong>|  Sancta</strong></a>
+							<img src="viz/LinkedInLogo.jpeg" height="50" width="50">
+					
+					<div class="header"><h1 class="summary">Project Advisors</h1></div>		
+							<a href="https://www.linkedin.com/in/neffashley/" target="_blank" src="viz/LinkedInLogo.jpeg"><strong>Ashley</strong></a>	
+							<a href="https://www.linkedin.com/in/dr-carl-arrington-jr-84611414/" target="_blank" src="viz/LinkedInLogo.jpeg"><strong>|  Dr Carl</strong></a>	
+							<a href="http://www.linkedin.com/in/adamcsilva" target="_blank" src="viz/LinkedInLogo.jpeg"><strong>|  Adam</strong></a>		
+							<a href="https://www.linkedin.com/in/camirinshiqaq/" target="_blank" src="viz/LinkedInLogo.jpeg"><strong>|  Camir</strong></a>	
+							<a href="https://www.linkedin.com/in/joe-corvino" target="_blank" src="viz/LinkedInLogo.jpeg"><strong>|  Joe</strong></a>			
+							<a href="" target="_blank" src="viz/LinkedInLogo.jpeg"><strong>|  Nimisha</strong></a>	
+							<img src="viz/LinkedInLogo.jpeg" height="50" width="50">						
+					
+					<div class="header"><h1 class="summary">Resources| References </h1></div>
+						
+						<div class="content">
+							<a href="https://data.amerigeoss.org/nl/dataset/usda-rural-development-section-502-guaranteed-loan-program-active-loans-by-congressional-d" target="_blank">
+								<img src="viz/i_dataLogo.jpeg" alt="datasource" height "180" width="180"></a>	
+							<a href="https://www.usdaloans.com/articles/direct-vs-guaranteed/" target="_blank">
+								<img src="viz/i_usdaLogo.png" alt="usda" height "180" width="180"></a>	
+							<p class="para text-right"><i> 24-Nov-2019 | Ray</i></p>	
+						</div>
+				
+				</div>
+			</div>
+		
+		<!-------------------------------------------------------------------------------------------------------->	
+		<!-----------------------------------------------  FOOTER  												-->	
+		<footer class="footer navbar-fixed-bottom"><div class="two-toned-footer-color"></div>
+			<p class="text-muted text-muted-footer text-center">&copy; Prescient Insights, Analytics, Machine Learning and Visualization  (16-Nov-2019 | Ray )</p>
+		</footer> 
+		
+		<!-----------------------------------------------  JQUERY  -->	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>		
+
+		<!-----------------------------------------------  BOOTSTRAP  -->	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</body>
+</html>

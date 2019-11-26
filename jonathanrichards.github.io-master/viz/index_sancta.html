@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">	<title>Insighters Dashboard</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet"  href="../05_style.css">
+    </head>
+
+    <body>
+		<!-------------------------------------------------------------------------------------------------------->
+		<!--                                                NAV  												-->
+		
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+					<!--									... LANDING PAGE  									-->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+						<a class="navbar-brand" href="../index.html"><span class="latitude"></span>INSIGHTers</a></div>
+					<!--									... VIZ & DATA PAGES 							-->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<!--<li><a href="../index.html">ROADMAP</a></li>-->							
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ANALYSIS<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="index_amrita.html">Amrita</a></li>
+									<li><a href="index_james.html">James</a></li>
+									<li><a href="index_jonathan.html">Jonathan</a></li>									
+									<li><a href="index_nobon.html">Nobon</a></li>
+									<li><a href="index_patrick.html">Patrick</a></li>
+									<li><a href="index_ray.html">Ray</a></li>
+									<li><a href="index_sancta.html">Sancta</a></li>		
+								</ul></li>
+							<!--<li><a href="../index.html">FINDINGS</a></li>-->
+							<!--<li><a href="https://data.amerigeoss.org/nl/dataset/usda-rural-development-section-502-guaranteed-loan-program-active-loans-by-congressional-d">DATA</a></li></ul></div></div>-->
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="https://data.amerigeoss.org/nl/dataset/usda-rural-development-section-502-guaranteed-loan-program-active-loans-by-congressional-d">Data</a></li>
+									<li><a href="https://www.usdaloans.com/articles/direct-vs-guaranteed/">USDA Loans</a></li>
+								</ul></li>
+		</nav>		
+		
+
+		<!-------------------------------------------------------------------------------------------------------->
+		<!--                                                CONTAINER  											-->
+<div class="content"><div class="container-fluid"><div class="row">
+			<div class="col-sm-12 col-md-8"><div class="box">
+				<div class="header">	<h1 class="description-header" style="font-size:20px;","color:majenta;">MORTGAGE PREAPROVAL </h1></div>
+				<div class="content">	<img src="mortgage.jpg" alt="James" class="pull-left"  alt="" id="homeP">	
+										<p style="font-family:courier;">Although there are different options you can turn on for housing mortgage, there are always relatively minimum standards you must meet to qualify; consequently,it’s a good ideas prior your house searching,to find out how much you potentially qualify to borrow. That means you’re not wasting time looking at homes outside your price range or loan type which wouldn't help you.</p>
+										<p style="font-family:courier;">ML is generally used by lenders to try to estimate the probability of granting a loan given the value of borrowers input variables.
+											<ul>
+												<li>	Personal information:  Age, Marital status, income, geographical location</li>
+												<li>	Credit information: Total amount</li>
+												<li>	Credit history</li>
+												<li>	Bank account behavioral</li>
+											</ul>
+										<h2>
+										<span style="color:grey;"> Objective</span>
+										</h2>
+										<p style="font-family:courier;">The objective of this study was to apply ML concepts on USDA data (2019) in different States to try to quantify the level of impact of borrowers behaviour on loan application.
+        									<img src="ML.jpg" id="homeP"></p>
+										<h2>
+										<span style="color:grey;"> Data source</span>
+										</h2>
+										<p style="font-family:courier;">The <a href="https://data.amerigeoss.org/nl/dataset/usda-rural-development-single-family-section-502-direct-active-borrowers-by-county" target="_blank">USDA guaranteed loan</a>
+										<h2>
+										<span style="color:grey;"> Data Description</span>
+										</h2>
+										<p style="font-family:courier;"> The Borrowers loan dataset is based on congressional District in each State and specify all active loans in each District, number of people in different defined categories based on level of income, race, marital Status, age as well as credit information like average gross income of borrowers in each of the districts, average request amount and average loan amount </p>
+										<h2>
+										<span style="color:grey"> Data Preprocessing</span>
+										</h2>
+										<p style="font-family:courier;"> This part involves data cleaning and preparation to check for missing data, group the predictors or independant variable(The study used borrower gross income and Requested amount) on State level, data conversion,...</p>
+										<h2>
+										<span style="color:grey;"> Data Analysis</span>
+										</h2>
+										<p style="font-family:courier;">Machine learning is used to increase understanding by showing which factors most affected specific outcomes</p>
+										<img src="score gross I Vs Loan.jpg" class="responsive_fluid">
+										<p style="font-family:courier;">In this predicting modeling, the data had to be partitioned into train and test sets;70% of the data is partitioned for training purpose and 30% for testing purpose. classification techniques(supervised learning)was used to analyse the dataset to bring out any relationship between predictors(explanatories)that are independent variables, in this case Gross income and requested amount and a response (outcome)that is a dependant variable; in this case, Given loan amount.
+										</p>
+										<h2>
+										<span style="color:grey;"> Results</span>
+										</h2>
+										<p style="font-family:courier;">Correlation matrix helps to understand correlated variables and classification methods: plotting Input variables against the outcome variable revealed a linear regression in some kind of proportionality. </p>
+										<p style="font-family:courier;">
+										 With running in the test and fit in the model, the Clf score was 1 for gross income predictor and 0,7 with customers requested loan amount .
+										<img src="Sancta_gross income.jpg"class="responsive_fluid" >
+										<img src="Sancta_Income VS requestedLoan.jpg" class="responsive_fluid" >
+										<img src="Sancta_score2.jpg" class="responsive_fluid">
+										</p>
+
+   
+            <div class="col-sm-12 col-md-4"><div class="box">
+                <div class="header">	<h1 class="summary">INSIGHTers</h1></div>
+                <div class="content">  	<a href="index_james.html"><img src="i_analyst_james.png" alt="James" height="150" width="150"></a>
+										<a href="index_jonathan.html"><img src="i_analyst_jonathan.png" alt="Jonathan" height="150" width="150"></a>
+										<a href="index_ray.html"><img src="i_analyst_ray.png" alt="Ray" height="150" width="150"></a>
+										<a href="index_amrita.html"><img src="i_analyst_amrita.png" alt="Amrita" height="150" width="150"></a>
+										<a href="index_sancta.html"><img src="Sancta.jpg" alt="Sancta" height="350" width="350"></a>
+										<a href="index_nobon.html"><img src="i_analyst_nobon.png" alt="Nobon" height="150" width="150"></a>
+										<a href="index_patrick.html"><img src="i_analyst_patrick.png" alt="Patrick" height="150" width="150"></a>										
+            </div></div>
+        </div></div></div>
+		<!-------------------------------------------------------------------------------------------------------->	
+		<!-----------------------------------------------  FOOTER  												-->	
+		<footer class="footer navbar-fixed-bottom"><div class="two-toned-footer-color"></div>
+			<p class="text-muted text-muted-footer text-center">&copy; Prescient Insights, Analytics, Machine Learning and Visualization  (16-Nov-2019 | Sancta )</p>
+		</footer>        
+	</body>
+</html>
